@@ -10,6 +10,7 @@ ENV APACHE_LOG_DIR /var/log/apache2
 RUN echo 'Hello, docker' > /var/www/index.html
 
 ENTRYPOINT ["/usr/sbin/apache2"]
+EXPOSE 80
 CMD ["-D", "FOREGROUND"]
 
 ADD . /var/www/html
