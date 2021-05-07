@@ -1,2 +1,2 @@
-FROM ShruthiKumbham/webapp
+FROM shruthiKumbham/webapp
 ADD . /var/www/html
